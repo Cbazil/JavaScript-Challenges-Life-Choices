@@ -17,15 +17,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="box" id="redbox" onclick="redColor('red')">Red</div> 
-        <div class="box" id="orangebox" onclick="orangeColor('orange')">Orange</div>
-        <div class="box" id="yellowbox" onclick="yellowColor('yellow')">Yellow</div>
-        <div class="box" id="greenbox" onclick="greenBox('green')">Green</div>
-        <div class="box" id="bluebox" onclick="blueBox('blue')">Blue</div>
-        <div class="box" id="indigobox" onclick="indigoBox('indigo')">Indigo</div>
-        <div class="box" id="violetbox" onclick="violetBox('violet')">Violet</div>
+        <div class="box" id="redbox" onmouseover="changeColor('red')">Red</div> 
+        <div class="box" id="orangebox" onmouseover="changeColor('orange')">Orange</div>
+        <div class="box" id="yellowbox" onmouseover="changeColor('yellow')">Yellow</div>
+        <div class="box" id="greenbox" onmousemove="changeColor('green')">Green</div>
+        <div class="box" id="bluebox" onmouseover="changeColor('blue')">Blue</div>
+        <div class="box" id="indigobox" onmouseover="changeColor('indigo')">Indigo</div>
+        <div class="box" id="violetbox" onmouseover="changeColor('violet')">Violet</div>
     </div>
     <script>
+//         function changeColor(newColor){
+//         let btn = document.getElementById('redbox, orangebox, yellowbox, greenbox, bluebox, indigobox, violetbox');
+//         btn.style.backgroundColor = newColor;
+// }
         // document.getElementById("redbox").style.backgroundColor = "red";
         // document.getElementById("orangebox").style.backgroundColor = "orange";
         // document.getElementById("yellowbox").style.backgroundColor = "yellow";
