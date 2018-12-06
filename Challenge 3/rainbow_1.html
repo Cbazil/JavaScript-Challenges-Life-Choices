@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="ut f-8" />
     <title>Challenge 3 Rainbow</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
@@ -17,22 +17,51 @@
 </head>
 <body>
     <div class="container">
-        <div class="box" id="redbox">Red</div>
-        <div class="box" id="orangebox">Orange</div>
-        <div class="box" id="yellowbox">Yellow</div>
-        <div class="box" id="greenbox">Green</div>
-        <div class="box" id="bluebox">Blue</div>
-        <div class="box" id="indigobox">Indigo</div>
-        <div class="box" id="violetbox">Violet</div>
+        <div class="box" id="redbox" onclick="redColor('red')">Red</div> 
+        <div class="box" id="orangebox" onclick="orangeColor('orange')">Orange</div>
+        <div class="box" id="yellowbox" onclick="yellowColor('yellow')">Yellow</div>
+        <div class="box" id="greenbox" onclick="greenBox('green')">Green</div>
+        <div class="box" id="bluebox" onclick="blueBox('blue')">Blue</div>
+        <div class="box" id="indigobox" onclick="indigoBox('indigo')">Indigo</div>
+        <div class="box" id="violetbox" onclick="violetBox('violet')">Violet</div>
     </div>
     <script>
-        document.getElementById("redbox").style.backgroundColor = "red";
-        document.getElementById("orangebox").style.backgroundColor = "orange";
-        document.getElementById("yellowbox").style.backgroundColor = "yellow";
-        document.getElementById("greenbox").style.backgroundColor = "green";
-        document.getElementById("bluebox").style.backgroundColor = "blue";
-        document.getElementById("indigobox").style.backgroundColor = "indigo";
-        document.getElementById("violetbox").style.backgroundColor = "violet";
+        // document.getElementById("redbox").style.backgroundColor = "red";
+        // document.getElementById("orangebox").style.backgroundColor = "orange";
+        // document.getElementById("yellowbox").style.backgroundColor = "yellow";
+        // document.getElementById("greenbox").style.backgroundColor = "green";
+        // document.getElementById("bluebox").style.backgroundColor = "blue";
+        // document.getElementById("indigobox").style.backgroundColor = "indigo";
+        // document.getElementById("violetbox").style.backgroundColor = "violet";
+        // function changeRed(redColor){
+        //     redColor.clear();
+        //     let divRed = document.getElementById("redbox");
+        //     redColor.style.backgroundColor = redColor;
+        // } 
+        // function changeRed(orangeColor){
+        //     let divOrange = document.getElementById("orangebox");
+        //     orangeColor.style.backgroundColor = orangeColor;
+        // } 
+        // function changeRed(yellowColor){
+        //     let divYellow = document.getElementById("yellowbox");
+        //     yellowColor.style.backgroundColor = yellowColor;
+        // } 
+        // function changeRed(greenColor){
+        //     let divGreen = document.getElementById("greenbox");
+        //     greenColor.style.backgroundColor = greenColor;
+        // } 
+        // function changeRed(blueColor){
+        //     let divBlue = document.getElementById("bluebox");
+        //     blueColor.style.backgroundColor = blueColor;
+        // } 
+        // function changeRed(indigoColor){
+        //     let divIn = document.getElementById("indigobox");
+        //     indigoBox.style.backgroundColor = indigoColor;
+        // } 
+        // function changeRed(violetColor){
+        //     let divIndigo = document.getElementById("violetbox");
+        //     violetColor.style.backgroundColor = violetColor;
+        // } 
     </script>
 </body>
 </html>
