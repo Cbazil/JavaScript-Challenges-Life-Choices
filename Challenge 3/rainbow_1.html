@@ -17,13 +17,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="box" id="redbox" onmouseover="changeColor('red')">Red</div> 
-        <div class="box" id="orangebox" onmouseover="changeColor('orange')">Orange</div>
-        <div class="box" id="yellowbox" onmouseover="changeColor('yellow')">Yellow</div>
-        <div class="box" id="greenbox" onmousemove="changeColor('green')">Green</div>
-        <div class="box" id="bluebox" onmouseover="changeColor('blue')">Blue</div>
-        <div class="box" id="indigobox" onmouseover="changeColor('indigo')">Indigo</div>
-        <div class="box" id="violetbox" onmouseover="changeColor('violet')">Violet</div>
+        <div class="box" id="redbox" onclick="bgcolor()">Red</div> 
+        <div class="box" id="orangebox" onclick="bgcolor1()">Orange</div>
+        <div class="box" id="yellowbox" onclick="bgcolor2()">Yellow</div>
+        <div class="box" id="greenbox" onclick="bgcolor3()">Green</div>
+        <div class="box" id="bluebox" onclick="bgcolor4()">Blue</div>
+        <div class="box" id="indigobox" onclick="bgcolor5()">Indigo</div>
+        <div class="box" id="violetbox" onclick="bgcolor6()">Violet</div>
     </div>
     <script>
 //         function changeColor(newColor){
@@ -65,7 +65,42 @@
         // function changeRed(violetColor){
         //     let divIndigo = document.getElementById("violetbox");
         //     violetColor.style.backgroundColor = violetColor;
-        // } 
+        // }
+        
+// <<=========== Previous tries
+
+// latest Attempt ========>>>>>
+        
+        let rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+            function bgcolor() {
+                red = document.getElementById("redbox");
+                red.style.backgroundColor = rainbow[0];
+            }
+            function bgcolor1() {
+                orange = document.getElementById("orangebox");
+                 orange.style.backgroundColor = rainbow[1];
+            }
+            function bgcolor2() {
+                yellow = document.getElementById("yellowbox");
+                 yellow.style.backgroundColor = rainbow[2];
+            }
+            function bgcolor3() {
+                green = document.getElementById("greenbox");
+                 green.style.backgroundColor = rainbow[3];
+            }
+            function bgcolor4() {
+                blue = document.getElementById("bluebox");
+                 blue.style.backgroundColor = rainbow[4];
+            }
+            function bgcolor5() {
+                indigo = document.getElementById("indigobox");
+                 indigo.style.backgroundColor = rainbow[5];
+            }
+            function bgcolor6() {
+                violet = document.getElementById("violetbox");
+                 violet.style.backgroundColor = rainbow[6];
+            }
+
     </script>
 </body>
 </html>
