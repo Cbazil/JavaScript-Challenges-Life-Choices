@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Age Restriction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div>
+        <input type="number" min="1" max="150" id="age">
+        <div id="display"></div>
+        <button onsubmit="vali()">Submit</button>
+    </div>
+    <script>
+       function vali() {
+        let age = document.getElementById("age");
+}
+//write an if else statement checking if the age is less than 13
+if (age < 13){
+    //display div must show a text such as "You are too young to use the internet"
+    documemt.getElementById("display").innerHTML("You are too young to use the internet");
+}
+
+//check for the following ages 6, 13, 16, 18, 21, 23, 30+
+    </script>
+</body>
+</html>
